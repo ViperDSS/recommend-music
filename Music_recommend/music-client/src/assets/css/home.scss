@@ -1,0 +1,33 @@
+@import "var.scss";
+
+.home {
+  margin-top: $header-height - 10px;
+
+  // Swiper 组件保持全宽
+  swiper {
+    width: 100%; // 确保 swiper 覆盖整个屏幕宽度
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  // 应用两侧留白到除 swiper 外的其他 section
+  .section {
+    width: calc(100% - 2*$section-side-margin); // 计算宽度，减去两侧的留白
+    margin-top: 20px;
+    margin-left: $section-side-margin; // 水平留白
+    margin-right: $section-side-margin; // 水平留白
+    padding: $content-padding;
+    background-color: $color-white;
+    box-sizing: border-box;
+    .section-title {
+      height: 60px;
+      line-height: 60px;
+      padding-top: 10px;
+      font-size: 28px;
+      font-weight: 500;
+      text-align: center;
+      color: $color-black;
+      box-sizing: border-box;
+    }
+  }
+}

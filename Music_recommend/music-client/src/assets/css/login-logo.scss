@@ -1,0 +1,10 @@
+@import "var.scss";
+@import "global.scss";
+
+.login-logo {
+  background-color: $color-red-shallow;
+  height: 100vh;
+  width: 50vw;
+  min-width: 650px;
+  overflow: hidden;
+}
